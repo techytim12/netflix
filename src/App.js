@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import Banner from './Components/Banner/Banner';
 import RowPost from './Components/RowPost/RowPost';
+import  {originals, action, trending, horror, comedy} from './urls'
 
 
 function App() {
@@ -10,7 +11,11 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner/>
-      <RowPost />
+      <RowPost url={originals} title="Netflix Originals" />
+      <RowPost url={trending} title="Trending" isSmall />
+      <RowPost url={action} title="Action" isSmall />
+      <RowPost url={horror} title="Horror" isSmall />
+      <RowPost url={comedy} title="Comedy" isSmall />
     </div>
   );
 }

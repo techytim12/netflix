@@ -12,7 +12,13 @@
     display: none;
 }
 
-.posters > img {
+.poster {
     max-height: 250px;
     margin-right: 10px;
+}
+
+.smallPoster {
+    margin-right: 10px;
+    max-height: 150px;
+    
 }
